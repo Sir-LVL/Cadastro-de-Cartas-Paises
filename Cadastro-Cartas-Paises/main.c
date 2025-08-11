@@ -19,7 +19,18 @@ int main()
     getchar();
     printf("Digite a área de %s: \n", pais2);
     scanf("%f", &area2);
-    printf("%f e %f", area1, area2);
-
+    printf("Digite a população de %s: \n", pais1);
+    scanf("%d", &populacao1);
+    printf("Digite a população de %s: \n", pais2);
+    scanf("%d", &populacao2);
+    printf("Digite o PIB de %s: \n", pais1);
+    scanf("%f", &pib1);
+    printf("Digite o PIB de %s: \n", pais2);
+    scanf("%f", &pib2);
+    printf("Quantos pontos turisticos tem %s? \n", pais1);
+    scanf("%d", &pontos_turi1);
+    printf("Quantos pontos turisticos tem %s? \n", pais2);
+    scanf("%d", &pontos_turi2);
+    printf("%d e %d", pontos_turi1, pontos_turi2);
     return 0;
 }
