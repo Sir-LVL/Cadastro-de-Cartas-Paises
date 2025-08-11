@@ -15,7 +15,11 @@ int main()
     fgets(pais2, 50, stdin);
     pais2[strcspn(pais2, "\n")] = '\0';
     printf("Digite a área de %s: \n", pais1);
-    scanf("%f", area1);
+    scanf("%f", &area1);
+    getchar();
+    printf("Digite a área de %s: \n", pais2);
+    scanf("%f", &area2);
+    printf("%f e %f", area1, area2);
 
     return 0;
 }
