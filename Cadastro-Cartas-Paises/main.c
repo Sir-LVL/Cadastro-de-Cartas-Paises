@@ -3,6 +3,8 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    int populacao, pontos_turi;
+    float area, pib;
+    printf("//////////////////////////////////////////////// \n           Cadastro de Cartas Países \n////////////////////////////////////////////////");
     return 0;
 }
