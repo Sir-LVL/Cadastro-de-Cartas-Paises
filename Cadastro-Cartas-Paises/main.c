@@ -4,8 +4,9 @@
 
 int main()
 {
-    int populacao1, populacao2, pontos_turi1, pontos_turi2;
+    int pontos_turi1, pontos_turi2;
     float area1, area2, pib1, pib2, pibcapi1,pibcapi2, densidade_popu1, densidade_popu2;
+    unsigned long int populacao1, populacao2;
     char pais1[50], pais2[50];
     printf("//////////////////////////////////////////////// \n           Cadastro de Cartas Países \n//////////////////////////////////////////////// \n");
 
