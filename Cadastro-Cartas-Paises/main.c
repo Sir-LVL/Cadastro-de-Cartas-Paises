@@ -19,7 +19,7 @@ int main()
     scanf("%f", &area1);
 
     printf("Digite a população de %s: \n", pais1);
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Digite o PIB de %s: \n", pais1);
     scanf("%f", &pib1);
@@ -50,7 +50,7 @@ int main()
     scanf("%f", &area2);
 
     printf("Digite a população de %s: \n", pais2);
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Digite o PIB de %s: \n", pais2);
     scanf("%f", &pib2);
