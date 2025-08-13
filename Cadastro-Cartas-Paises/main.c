@@ -5,7 +5,8 @@
 int main()
 {
     int pontos_turi1, pontos_turi2;
-    float area1, area2, pib1, pib2, pibcapi1,pibcapi2, densidade_popu1, densidade_popu2;
+    float area1, area2, pib1, pib2, pibcapi1,pibcapi2, densidade_popu1,
+    densidade_popu2, densidade_inver1, densidade_inver2, super1, super2;
     unsigned long int populacao1, populacao2;
     char pais1[50], pais2[50];
     printf("//////////////////////////////////////////////// \n           Cadastro de Cartas Países \n//////////////////////////////////////////////// \n");
@@ -48,6 +49,12 @@ int main()
 
     pibcapi1 = pib1 / (float) populacao1;
     pibcapi2 = pib2 / (float) populacao2;
+
+    densidade_inver1 = 1 / densidade_popu1;
+    densidade_inver2 = 1 / densidade_popu2;
+
+    super1 = area1 + densidade_popu1 + densidade_inver1 + pib1 + pibcapi1 + populacao1 + pontos_turi1;
+    super2 = area2 + densidade_popu2 + densidade_inver2 + pib2 + pibcapi2 + populacao2 + pontos_turi2;
 
     return 0;
 }
