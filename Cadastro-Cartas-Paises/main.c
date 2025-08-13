@@ -78,15 +78,9 @@ int main()
     pontuacao1 = 0;
     pontuacao2 = 0;
 
-    if (area1 > area2) {
-        ++pontuacao1;
-        printf("\nA Área de %s, é maior do que a de %s\n", pais1, pais2);
-        printf("%d", pontuacao1);
-    } else {
-        ++pontuacao2;
-        printf("A área de %s, é maior do que a de %s\n", pais2, pais1);
-        printf("%d", pontuacao2);
-    }
+    printf("\nComparação de Países");
+
+
 
     return 0;
 }
