@@ -78,7 +78,16 @@ int main()
     pontuacao1 = 0;
     pontuacao2 = 0;
 
-    printf("\nComparação de Países");
+
+    printf("\nComparação de Países: \n");
+
+    if (area1 > area2) {
+        ++pontuacao1;
+        printf("População: %s ganha. %s %d X %d %s", pais1, pais1, pontuacao1, pontuacao2, pais2);
+    } else{
+        ++pontuacao2;
+        printf("População: %s ganha. %s %d X %d %s", pais2, pais1, pontuacao1, pontuacao2, pais2);
+    }
 
 
 
