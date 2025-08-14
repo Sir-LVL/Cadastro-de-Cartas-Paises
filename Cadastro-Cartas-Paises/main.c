@@ -35,7 +35,7 @@ int main()
     printf("\nCarta 1: %s \n", pais1);
     printf("Área: %.2f Km² \n", area1);
     printf("População: %d \n", populacao1);
-    printf("Densidade populacional: %.2f hab/Km² \n", densidade_popu1);
+    printf("Densidade Populacional: %.2f hab/Km² \n", densidade_popu1);
     printf("Quantidade de Pontos Turísticos: %d \n", pontos_turi1);
     printf("PIB: R$%.2f \n", pib1);
     printf("PIB per Capita: R$%.2f \n", pibcapi1);
@@ -67,7 +67,7 @@ int main()
     printf("\nCarta 2: %s \n", pais2);
     printf("Área: %.2f Km² \n", area2);
     printf("População: %d \n", populacao2);
-    printf("Densidade populacional: %.2f hab/Km² \n", densidade_popu2);
+    printf("Densidade Populacional: %.2f hab/Km² \n", densidade_popu2);
     printf("Quantidade de Pontos Turísticos: %d \n", pontos_turi2);
     printf("PIB: R$%.2f \n", pib2);
     printf("PIB per Capita: R$%.2f \n", pibcapi2);
@@ -83,11 +83,60 @@ int main()
 
     if (area1 > area2) {
         ++pontuacao1;
-        printf("População: %s ganha. %s %d X %d %s", pais1, pais1, pontuacao1, pontuacao2, pais2);
+        printf("Área: %s ganha. %s %d X %d %s\n", pais1, pais1, pontuacao1, pontuacao2, pais2);
     } else{
         ++pontuacao2;
-        printf("População: %s ganha. %s %d X %d %s", pais2, pais1, pontuacao1, pontuacao2, pais2);
+        printf("Área: %s ganha. %s %d X %d %s\n", pais2, pais1, pontuacao1, pontuacao2, pais2);
     }
+
+    if (populacao1 > populacao2) {
+        ++pontuacao1;
+        printf("População: %s ganha. %s %d X %d %s\n", pais1, pais1, pontuacao1, pontuacao2, pais2);
+    } else{
+        ++pontuacao2;
+        printf("População: %s ganha. %s %d X %d %s\n", pais2, pais1, pontuacao1, pontuacao2, pais2);
+    }
+
+    if (densidade_popu1 < densidade_popu2) {
+        ++pontuacao1;
+        printf("Densindade Populacional: %s ganha. %s %d X %d %s\n", pais1, pais1, pontuacao1, pontuacao2, pais2);
+    } else{
+        ++pontuacao2;
+        printf("Densindade Populacional: %s ganha. %s %d X %d %s\n", pais2, pais1, pontuacao1, pontuacao2, pais2);
+    }
+
+    if (pontos_turi1 > pontos_turi2) {
+        ++pontuacao1;
+        printf("Pontos Turísticos: %s ganha. %s %d X %d %s\n", pais1, pais1, pontuacao1, pontuacao2, pais2);
+    } else{
+        ++pontuacao2;
+        printf("Pontos Turísticos: %s ganha. %s %d X %d %s\n", pais2, pais1, pontuacao1, pontuacao2, pais2);
+    }
+
+    if (pib1 > pib2) {
+        ++pontuacao1;
+        printf("PIB: %s ganha. %s %d X %d %s\n", pais1, pais1, pontuacao1, pontuacao2, pais2);
+    } else{
+        ++pontuacao2;
+        printf("PIB: %s ganha. %s %d X %d %s\n", pais2, pais1, pontuacao1, pontuacao2, pais2);
+    }
+
+    if (pibcapi1 > pibcapi2) {
+        ++pontuacao1;
+        printf("PIB Per Capita: %s ganha. %s %d X %d %s\n", pais1, pais1, pontuacao1, pontuacao2, pais2);
+    } else{
+        ++pontuacao2;
+        printf("PIB Per Capita: %s ganha. %s %d X %d %s\n", pais2, pais1, pontuacao1, pontuacao2, pais2);
+    }
+
+    if (super1 > super2) {
+        ++pontuacao1;
+        printf("Super Poder: %s ganha. %s %d X %d %s\n", pais1, pais1, pontuacao1, pontuacao2, pais2);
+    } else{
+        ++pontuacao2;
+        printf("Super Poder: %s ganha. %s %d X %d %s\n", pais2, pais1, pontuacao1, pontuacao2, pais2);
+    }
+
 
 
 
