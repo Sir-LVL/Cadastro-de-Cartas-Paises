@@ -137,6 +137,12 @@ int main()
         printf("Super Poder: %s ganha. %s %d X %d %s\n", pais2, pais1, pontuacao1, pontuacao2, pais2);
     }
 
+    if (pontuacao1 > pontuacao2) {
+        printf("\nO País Ganhador é %s!\n", pais1);
+    } else {
+        printf("\nO País Ganhador é %s!\n", pais2);
+    }
+
 
 
 
